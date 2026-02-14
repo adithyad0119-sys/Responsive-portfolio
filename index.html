@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adithya | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header" id="top">
+  <div class="container nav">
+    <a class="brand" href="#home">Adithya</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="menu" id="menu">
+      <a href="#home" class="link">Home</a>
+      <a href="#about" class="link">About</a>
+      <a href="#skills" class="link">Skills</a>
+      <a href="#projects" class="link">Projects</a>
+      <a href="#contact" class="link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="home" class="page">
+    <div class="page-inner hero">
+      <div>
+        <p class="muted">Frontend Developer • UI</p>
+        <h1>Hi, I’m <span class="accent">Adithya</span>.</h1>
+        <p class="lead">I build responsive websites with clean HTML/CSS and practical JavaScript.</p>
+        <div class="row">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Hire me</a>
+        </div>
+        <div class="row small">
+          <a class="chip" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="chip" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="chip" href="mailto:you@email.com">Email</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Quick info</h3>
+        <ul class="list">
+          <li>Mobile-first responsive UI</li>
+          <li>Basic accessibility + SEO</li>
+          <li>Simple JS interactions</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="page">
+    <div class="page-inner">
+      <h2>About</h2>
+      <p class="desc">
+        I’m Adithya. I build responsive websites and clean UI layouts.
+        I focus on simple code, good structure, and smooth user experience.
+      </p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>What I do</h3>
+          <ul class="list">
+            <li>Landing pages & portfolios</li>
+            <li>UI components & layouts</li>
+            <li>Forms, validation, modals</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>How I work</h3>
+          <ul class="list">
+            <li>HTML structure → CSS style → JS features</li>
+            <li>Mobile-first responsive design</li>
+            <li>Clean, readable code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="page">
+    <div class="page-inner">
+      <h2>Skills</h2>
+      <p class="desc">Strong fundamentals + practical project skills.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <div class="skill">
+            <div class="skill-top"><span>HTML</span><span class="muted">90%</span></div>
+            <div class="bar"><span style="width:90%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>CSS</span><span class="muted">88%</span></div>
+            <div class="bar"><span style="width:88%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>JavaScript</span><span class="muted">82%</span></div>
+            <div class="bar"><span style="width:82%"></span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tools</h3>
+          <div class="tags">
+            <span class="tag">Git</span><span class="tag">Figma</span><span class="tag">APIs</span>
+            <span class="tag">Netlify/Vercel</span><span class="tag">Basic Testing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="page">
+    <div class="page-inner">
+      <h2>Projects</h2>
+      <p class="desc">Filter + search. Click a project for details.</p>
+
+      <div class="toolbar">
+        <div class="filters">
+          <button class="fbtn active" data-filter="all">All</button>
+          <button class="fbtn" data-filter="web">Web</button>
+          <button class="fbtn" data-filter="ui">UI</button>
+          <button class="fbtn" data-filter="js">JS</button>
+        </div>
+        <input id="search" type="search" placeholder="Search..." />
+      </div>
+
+      <div class="projects" id="projectsGrid">
+        <article class="project card" tabindex="0"
+          data-tags="web ui"
+          data-title="Landing Page"
+          data-desc="Responsive landing page with clean layout and CTA."
+          data-stack="HTML,CSS,Responsive"
+          data-live="#"
+          data-code="#">
+          <h3>Landing Page</h3>
+          <p class="muted">Marketing layout + CTA.</p>
+          <div class="tags"><span class="tag">web</span><span class="tag">ui</span></div>
+        </article>
+
+        <article class="project card" tabindex="0"
+          data-tags="js web"
+          data-title="Task Tracker"
+          data-desc="CRUD tasks with filters/search and localStorage."
+          data-stack="JavaScript,LocalStorage"
+          data-live="#"
+          data-code="#">
+          <h3>Task Tracker</h3>
+          <p class="muted">CRUD + filter + storage.</p>
+          <div class="tags"><span class="tag">js</span><span class="tag">web</span></div>
+        </article>
+
+        <article class="project card" tabindex="0"
+          data-tags="ui"
+          data-title="Mini Design System"
+          data-desc="Reusable UI components with consistent spacing."
+          data-stack="CSS,UI"
+          data-live="#"
+          data-code="#">
+          <h3>Mini Design System</h3>
+          <p class="muted">Tokens + components.</p>
+          <div class="tags"><span class="tag">ui</span></div>
+        </article>
+
+        <article class="project card" tabindex="0"
+          data-tags="js ui"
+          data-title="Charts Demo"
+          data-desc="Simple chart demo with responsive layout."
+          data-stack="JavaScript,SVG"
+          data-live="#"
+          data-code="#">
+          <h3>Charts Demo</h3>
+          <p class="muted">Tooltips + transitions.</p>
+          <div class="tags"><span class="tag">js</span><span class="tag">ui</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="page">
+    <div class="page-inner">
+      <h2>Contact</h2>
+      <p class="desc">Send a message (validation included).</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Get in touch</h3>
+          <p class="muted">Email: <a class="accent" href="mailto:you@email.com">you@email.com</a></p>
+          <p class="muted">Location: Remote / Your City</p>
+        </div>
+
+        <form class="card" id="form" novalidate>
+          <label>Name
+            <input id="name" required minlength="2" />
+            <small class="err" data-for="name"></small>
+          </label>
+          <label>Email
+            <input id="email" type="email" required />
+            <small class="err" data-for="email"></small>
+          </label>
+          <label>Message
+            <textarea id="msg" rows="6" required minlength="10"></textarea>
+            <small class="err" data-for="msg"></small>
+          </label>
+          <button class="btn" type="submit">Send</button>
+          <p class="muted small" id="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <footer class="footer">
+        <p class="muted small">© <span id="year"></span> Adithya</p>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="overlay" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal-head">
+      <h3 id="mTitle">Project</h3>
+      <button class="menu-btn" id="mClose" aria-label="Close">✕</button>
+    </div>
+    <p class="muted" id="mDesc"></p>
+    <div class="tags" id="mStack"></div>
+    <div class="row">
+      <a class="btn" id="mLive" href="#" target="_blank" rel="noreferrer">Live</a>
+      <a class="btn btn-ghost" id="mCode" href="#" target="_blank" rel="noreferrer">Code</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
